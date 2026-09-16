@@ -1,14 +1,22 @@
-# Chop Beta AI 🍲🤖
+<p align="center">
+  <img src="public/images/chop-beta-logo.png" alt="Chop Beta AI Logo" width="320" />
+</p>
 
-[![Next.js](https://img.shields.io/badge/Next.js-14.2.35-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.5-black?style=for-the-badge&logo=framer&logoColor=blue)](https://www.framer.com/motion/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+<h1 align="center">Chop Beta AI 🍲🤖</h1>
 
-> **Eat Smart. Live Well. Powered by AI.**  
-> An AI-driven food intelligence and decision platform tailored for Nigeria — bridging wellness goals, budgets, and everyday local delicacies.
+<p align="center">
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-14.2.35-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" /></a>
+  <a href="https://react.dev/"><img src="https://img.shields.io/badge/React-18.3.1-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" /></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" /></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS" /></a>
+  <a href="https://www.framer.com/motion/"><img src="https://img.shields.io/badge/Framer_Motion-12.5-black?style=for-the-badge&logo=framer&logoColor=blue" alt="Framer Motion" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge" alt="License: MIT" /></a>
+</p>
+
+<p align="center">
+  <strong>Eat Smart. Live Well. Powered by AI.</strong><br />
+  An AI-driven food intelligence and decision platform tailored for Nigeria — bridging wellness goals, budgets, and everyday local delicacies.
+</p>
 
 ---
 
@@ -28,7 +36,6 @@
 - [Waitlist & API Integration](#-waitlist--api-integration)
 - [Roadmap](#-roadmap)
 - [Contributing](#-contributing)
-- [Author & Acknowledgements](#-author--acknowledgements)
 - [License](#-license)
 
 ---
@@ -130,7 +137,7 @@ ChopBeta-AI/
 │   ├── utils.ts             # Tailwind class merging utility (clsx + twMerge)
 │   └── waitlist.ts          # Waitlist validation logic and API connector
 ├── public/
-│   └── images/              # High-resolution dish photography and textures
+│   └── images/              # Platform logo, dish photography, and textures
 ├── .eslintrc.json           # ESLint configuration
 ├── .gitignore               # Ignored directories and sensitive files
 ├── next.config.mjs          # Next.js build and optimization config
@@ -228,16 +235,6 @@ Contributions are what make the open-source community an inspiring place to lear
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
----
-
-## 👤 Author & Acknowledgements
-
-**Adeyanju Fuhad**
-- GitHub: [@adeyanjufuhad](https://github.com/adeyanjufuhad)
-- Email: [fuhadadeyanju@gmail.com](mailto:fuhadadeyanju@gmail.com)
-
-Special thanks to everyone championing African gastronomy, nutrition education, and accessible digital health solutions.
 
 ---
 
