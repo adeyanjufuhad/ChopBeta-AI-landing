@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="240" viewBox="0 0 320 240" fill="none" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Row 1 -->
+  <g transform="translate(0 0)" stroke="#2E8B4A">
+    <polyline points="12,22 22,12 32,22 42,12 52,22 62,12 68,18"/>
+    <polyline points="12,42 22,32 32,42 42,32 52,42 62,32 68,38"/>
+    <polyline points="12,62 22,52 32,62 42,52 52,62 62,52 68,58"/>
+  </g>
+  <g transform="translate(80 0)" stroke="#F2B32A">
+    <path d="M14 14H66V66H24V26H54V54H36V38H44"/>
+  </g>
+  <g transform="translate(160 0)" stroke="#F4E7CE">
+    <path d="M40 12 68 66H12Z"/>
+    <path d="M28 48q12-10 24 0q-12 10-24 0Z"/>
+    <circle cx="40" cy="48" r="2.5" fill="#F4E7CE"/>
+  </g>
+  <g transform="translate(240 0)" stroke="#D93A2B">
+    <path d="M20 10q9 10 0 20t0 20t0 20"/>
+    <path d="M40 10q9 10 0 20t0 20t0 20"/>
+    <path d="M60 10q9 10 0 20t0 20t0 20"/>
+  </g>
+  <!-- Row 2 -->
+  <g transform="translate(0 80)" stroke="#D93A2B">
+    <path d="M40 12V68M12 40H68M20 20 60 60M60 20 20 60"/>
+    <circle cx="40" cy="40" r="4" fill="#D93A2B"/>
+  </g>
+  <g transform="translate(80 80)" stroke="#F4E7CE">
+    <path d="M40 8 72 40 40 72 8 40Z"/>
+    <path d="M40 24 56 40 40 56 24 40Z"/>
+    <circle cx="40" cy="40" r="3" fill="#F4E7CE"/>
+    <circle cx="12" cy="12" r="3" fill="#F4E7CE"/>
+    <circle cx="68" cy="12" r="3" fill="#F4E7CE"/>
+    <circle cx="12" cy="68" r="3" fill="#F4E7CE"/>
+    <circle cx="68" cy="68" r="3" fill="#F4E7CE"/>
+  </g>
+  <g transform="translate(160 80)" stroke="#2E8B4A">
+    <path d="M12 26 40 46 68 26M12 42 40 62 68 42M12 10 40 30 68 10"/>
+  </g>
+  <g transform="translate(240 80)" stroke="#F2B32A">
+    <path d="M12 68 68 12M12 48 48 12M32 68 68 32M12 28 28 12M52 68 68 52"/>
+  </g>
+  <!-- Row 3 -->
+  <g transform="translate(0 160)" stroke="#F2B32A">
+    <circle cx="40" cy="40" r="27"/>
+    <circle cx="40" cy="40" r="16"/>
+    <circle cx="40" cy="40" r="4" fill="#F2B32A"/>
+  </g>
+  <g transform="translate(80 160)" stroke="#2E8B4A">
+    <path d="M12 18H68M12 62H68"/>
+    <path d="M18 18V32M30 18V32M42 18V32M54 18V32M66 18V32M18 62V48M30 62V48M42 62V48M54 62V48M66 62V48"/>
+    <circle cx="24" cy="40" r="2.5" fill="#2E8B4A"/>
+    <circle cx="40" cy="40" r="2.5" fill="#2E8B4A"/>
+    <circle cx="56" cy="40" r="2.5" fill="#2E8B4A"/>
+  </g>
+  <g transform="translate(160 160)" stroke="#D93A2B">
+    <path d="M12 60 26 20 40 60 54 20 68 60"/>
+    <circle cx="26" cy="68" r="2.5" fill="#D93A2B"/>
+    <circle cx="54" cy="68" r="2.5" fill="#D93A2B"/>
+  </g>
+  <g transform="translate(240 160)" stroke="#F4E7CE">
+    <path d="M14 14q26 0 26 26t26 26"/>
+    <path d="M14 34q14 0 14 14t14 14"/>
+    <path d="M38 14q14 0 14 14t14 14"/>
+  </g>
+</svg>
