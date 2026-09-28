@@ -7,6 +7,7 @@ import { WAITLIST_FORM_URL } from "@/lib/links";
 const links = [
   { label: "Why Chop Beta", href: "#about" },
   { label: "How It Works", href: "#how-it-works" },
+  { label: "Health & Halal", href: "#health" },
   { label: "Features", href: "#features" },
   { label: "Meals", href: "#meals" },
 ];

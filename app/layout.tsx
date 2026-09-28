@@ -8,10 +8,10 @@ const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], variable: "--font-jakart
 export const metadata: Metadata = {
   metadataBase: new URL("https://chopbeta-ai.vercel.app"),
   title: "Chop Beta AI — AI-Powered Food Decision Platform",
-  description: "AI food intelligence built for Nigeria. Get early access to the Chop Beta AI app — join the waitlist.",
+  description: "AI meal decisions built for Nigeria: health-aware, halal-safe suggestions, shopping lists in local market units, and ordering from market vendors. Join the waitlist.",
   openGraph: {
     title: "Chop Beta AI — AI-Powered Food Decision Platform",
-    description: "AI food intelligence built for Nigeria. Get early access to the Chop Beta AI app — join the waitlist.",
+    description: "AI meal decisions built for Nigeria: health-aware, halal-safe suggestions, shopping lists in local market units, and ordering from market vendors. Join the waitlist.",
     type: "website",
     images: [{ url: "/images/chop-beta-hero.png", width: 1672, height: 941, alt: "Chop Beta AI" }],
   },

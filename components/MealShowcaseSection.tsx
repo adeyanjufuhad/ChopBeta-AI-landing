@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "framer-motion";
 import { useRef } from "react";
 import { ArrowIcon } from "@/components/Icons";
 import { MealPhoto, type MealPhotoKey } from "@/components/MealPhotos";
@@ -20,14 +21,14 @@ const meals: { name: string; type: MealPhotoKey; tags: string[] }[] = [
 
 export function MealShowcaseSection() {
   const row = useRef<HTMLDivElement>(null);
+  const reduceMotion = useReducedMotion();
   const scroll = (direction: number) => row.current?.scrollBy({ left: direction * 360, behavior: "smooth" });
   return (
     <section id="meals" className="anchor-section section-pad overflow-hidden">
       <div className="section-shell">
         <Reveal className="flex items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <p className="eyebrow border-accent/25 text-accent-deep">Local by design</p>
-            <h2 className="section-title mt-5">Meals that actually make sense <span className="text-primary">here</span></h2>
+            <h2 className="section-title">Meals that actually make sense <span className="text-primary">here</span></h2>
             <p className="section-copy mt-4">We’re building around the foods you already know and love.</p>
           </div>
           <div className="hidden gap-2 md:flex">
@@ -36,16 +37,23 @@ export function MealShowcaseSection() {
           </div>
         </Reveal>
         <div ref={row} className="meal-scroll -mx-4 mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto px-4 pb-8 sm:-mx-8 sm:px-8 lg:-mx-10 lg:px-10">
-          {meals.map((meal) => (
-            <article key={meal.name} className="lift-card group w-[80vw] max-w-[340px] shrink-0 snap-start overflow-hidden rounded-card border border-ink/10 bg-white">
+          {meals.map((meal, index) => (
+            <motion.article
+              key={meal.name}
+              initial={reduceMotion ? false : { opacity: 0, x: 60, rotate: 2 }}
+              whileInView={{ opacity: 1, x: 0, rotate: 0 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: reduceMotion ? 0 : .6, delay: reduceMotion ? 0 : Math.min(index, 3) * .1, ease: [0.22, 1, 0.36, 1] }}
+              className="lift-card group w-[80vw] max-w-[340px] shrink-0 snap-start overflow-hidden rounded-card border border-ink/10 bg-white">
               <MealPhoto type={meal.type} />
               <div className="p-6">
                 <p className="text-xs font-bold uppercase tracking-wider text-primary">Meal preview</p>
                 <h3 className="mt-1.5 font-heading text-xl font-bold">{meal.name}</h3>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {meal.tags.map((tag) => <span key={tag} className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent-deep">{tag}</span>)}
-                </div>              </div>
-            </article>
+                </div>
+              </div>
+            </motion.article>
           ))}
         </div>
         <p className="text-sm leading-6 text-muted">Example dishes. Recommendations will depend on your profile and preparation.</p>

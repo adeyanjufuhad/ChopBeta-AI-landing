@@ -65,13 +65,14 @@ Modern living in Nigeria comes with specific food challenges that generic fitnes
 
 ## ✨ Key Features
 
-- 🧠 **AI Nutritional Mapping:** Personalised dietary recommendations and nutrient profiling adapted to your health objectives (weight management, muscle gain, energy, or clean eating).
-- 🇳🇬 **Nigerian Food Intelligence:** Deep contextual database of local recipes, portion estimation, cooking methods, and ingredient alternatives.
-- 📅 **Predictive Meal Scheduling:** Plan meals days or weeks in advance, complete with batch-cooking strategies and grocery lists.
-- 💰 **Budget & Market Fit:** Tailor food ideas to current price points, availability, and student/family budgets.
-- 📱 **Multi-Persona Experience:** Customised interfaces for students with campus constraints and working professionals.
-- ⚡ **Accessible & Responsive Design:** High-performance web experience with fluid animations, mobile-first responsiveness, and screen-reader accessibility.
-- 💌 **Early Access Waitlist:** Download buttons and waitlist CTAs route to the Chop Beta Google Form (open in a new tab or fill it inline).
+- 🧠 **Personalised meal suggestions:** one AI-suggested meal for the time of day, occasion, mood, or what is already in the house.
+- ❤️ **Health-aware:** suggestions respect conditions such as diabetes and hypertension, plus allergies and dietary restrictions.
+- ☪️ **Halal-safe:** halal requirements are enforced by a deterministic, rules-based filter, never left to the AI alone.
+- 🧺 **Shopping lists in market units:** ingredients in local units (mudu, derbi, paint rubber) with local market prices.
+- 💬 **Order from market vendors:** lists are relayed to vendors over WhatsApp (Phase 1), with delivery-partner APIs planned (Phase 2).
+- 🔔 **Order updates:** push notifications, SMS, or WhatsApp at every step.
+- 🔒 **Private by design:** health data is treated as sensitive and used only to shape meal suggestions.
+- 💌 **Early Access Waitlist:** download buttons and waitlist CTAs route to the Chop Beta Google Form.
 
 ---
 
@@ -122,10 +123,12 @@ ChopBeta-AI/
 │   ├── FeaturesSection.tsx  # Core platform feature cards
 │   ├── FooterSection.tsx    # Footer with brand links and copyright
 │   ├── HeroIllustration.tsx # Custom SVG/vector illustration for hero section
+│   ├── HealthHalalSection.tsx # Health & halal filter explainer with demo
 │   ├── HeroSection.tsx      # Landing hero with headline, CTAs, and badges
 │   ├── HowItWorksSection.tsx# 3-step platform walkthrough
 │   ├── Icons.tsx            # Custom SVG icon components
 │   ├── Logo.tsx             # Chop Beta AI brand logo
+│   ├── MarketSection.tsx    # Shopping list in market units + WhatsApp ordering
 │   ├── MealPhotos.tsx       # Dish photos (public/images/meals)
 │   ├── MealShowcaseSection.tsx # Interactive scrollable meal carousel
 │   ├── Navbar.tsx           # Responsive navigation with mobile menu

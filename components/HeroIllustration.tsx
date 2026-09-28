@@ -21,7 +21,7 @@ export function HeroIllustration() {
         <p className="inline-flex items-center gap-1.5 font-heading text-sm font-extrabold text-primary">Under ₦2,500 <CheckIcon className="size-4" /></p>
       </div>
       <div className="absolute -bottom-5 left-[18%] hidden rounded-full bg-accent px-4 py-2 font-heading text-sm font-bold text-white shadow-soft sm:inline-flex sm:items-center sm:gap-1.5">
-        <UiIcon type="chili" className="size-4" /> Naija-first AI
+        <UiIcon type="shield" className="size-4" /> Health &amp; halal checked
       </div>
     </motion.div>
   );

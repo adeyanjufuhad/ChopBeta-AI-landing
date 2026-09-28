@@ -13,7 +13,6 @@ a { text-underline-offset: 4px; }
 @layer components {
   .section-shell { @apply mx-auto w-full max-w-content px-4 sm:px-8 lg:px-10; }
   .section-pad { @apply py-20 md:py-24 lg:py-28; }
-  .eyebrow { @apply inline-flex items-center gap-2 rounded-full border px-3 py-1 font-heading text-xs font-bold uppercase tracking-[.14em]; }
   .section-title { @apply text-balance font-heading text-[34px] font-extrabold leading-[1.08] tracking-tight text-ink sm:text-5xl lg:text-[54px]; }
   .section-copy { @apply text-pretty text-base leading-7 text-muted sm:text-lg sm:leading-8; }
   .anchor-section { scroll-margin-top: 96px; }

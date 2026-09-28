@@ -21,14 +21,13 @@ export function WaitlistSection() {
   return (
     <section id="download" className="anchor-section section-pad">
       <div className="section-shell">
-        <Reveal>
+        <Reveal from="scale">
           <div id="waitlist" className="anchor-section relative overflow-hidden rounded-[32px] bg-primary px-6 py-12 text-white sm:px-12 sm:py-16 lg:px-16 lg:py-20">
             <AfricanPattern className="opacity-[.18]" />
 
             <div className="relative grid gap-12 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
               <div className="min-w-0">
-                <p className="eyebrow border-white/25 text-pepper">Be among the first</p>
-                <h2 className="mt-5 text-balance font-heading text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-[56px]">
+                <h2 className="text-balance font-heading text-4xl font-extrabold leading-[1.05] tracking-tight sm:text-5xl lg:text-[56px]">
                   The app is coming. Don’t miss it.
                 </h2>
                 <p className="mt-5 max-w-xl text-pretty text-lg leading-8 text-white/80">
@@ -40,11 +39,18 @@ export function WaitlistSection() {
               <div className="rounded-card border border-white/15 bg-forest p-6 sm:p-8">
                 <p className="font-heading text-lg font-bold">What you get on the waitlist</p>
                 <ul className="mt-5 space-y-4">
-                  {perks.map((perk) => (
-                    <li key={perk} className="flex gap-3 text-white/90">
+                  {perks.map((perk, index) => (
+                    <motion.li
+                      key={perk}
+                      initial={reduceMotion ? false : { opacity: 0, x: 24 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true, amount: 0.5 }}
+                      transition={{ duration: reduceMotion ? 0 : .5, delay: reduceMotion ? 0 : .3 + index * .12, ease: [0.22, 1, 0.36, 1] }}
+                      className="flex gap-3 text-white/90"
+                    >
                       <span className="mt-0.5 inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-pepper text-ink"><CheckIcon className="size-3.5" /></span>
                       <span className="leading-6">{perk}</span>
-                    </li>
+                    </motion.li>
                   ))}
                 </ul>
                 <a href={WAITLIST_FORM_URL} target="_blank" rel="noopener noreferrer" className="focus-ring btn-primary mt-8 w-full text-base">
