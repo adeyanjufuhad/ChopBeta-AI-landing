@@ -1,7 +1,7 @@
 // Every outbound call-to-action lives here so launch day is a one-line change.
 
 export const WAITLIST_FORM_URL =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfgNgr5MbyVDZqE8zoGV8Jnn7FUeehyUjxKeEE92zAdMsGMHg/viewform";
+  "https://docs.google.com/forms/d/11LnmgH_v9y7qTVNnYrJ7uGrErhC_SaSU3Ak2y1uSxtg/edit?usp=drivesdk";
 
 export const WAITLIST_EMBED_URL = `${WAITLIST_FORM_URL}?embedded=true`;
 
